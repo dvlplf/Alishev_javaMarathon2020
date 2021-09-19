@@ -1,3 +1,4 @@
+import java.lang.String;
 package day9.Task1;
 
 public class Human {
