@@ -23,7 +23,7 @@ public class Task1 {
     public static String countStr2(int numStart, int numEnd) {
         StringBuilder sb = new StringBuilder("");
         for (int i = numStart; i < numEnd; i++) {
-            sb.append(i +" ");
+            sb.append(i).append(" ");
         }
         return sb.toString();
     }
