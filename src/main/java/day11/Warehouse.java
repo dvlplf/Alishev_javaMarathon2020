@@ -21,8 +21,11 @@ public class Warehouse {
     }
 
     public String toString() {
+<<<<<<< HEAD
         StringBuilder sb = new StringBuilder("");
         sb.append("123");
+=======
+>>>>>>> origin/master
         return "countOrder = " + getCountOrders() + "\n" + "balance = " + getBalance();
     }
 }
