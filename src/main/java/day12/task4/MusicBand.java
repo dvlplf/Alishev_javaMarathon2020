@@ -1,11 +1,33 @@
 package day12.task4;
 
-import java.util.Arrays;
+import day12.task5.MusicArtist;
+
 import java.util.List;
 
-class MusicBand {
+public class MusicBand {
     private String name;
     private int year;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public List<String> getMembers() {
+        return members;
+    }
+
+    public void setMembers(List<String> members) {
+        this.members = members;
+    }
+
     private List<String> members;
 
     public MusicBand(String name, int year, List<String> members) {
@@ -23,16 +45,15 @@ class MusicBand {
         return "MusicBand{" +
                 "name='" + name + '\'' +
                 ", year=" + year +
-                ", members=" + Arrays.toString(members.toArray()) +
                 '}';
-    }
-
-    public String printMembers() {
-        return  "members=" + Arrays.toString(members.toArray()) + '}';
     }
 
     public static void transferMembers(List<String> members1, List<String> members2) {
         members1.addAll(members2);
         members2.clear();
+    }
+
+    public String printMembers() {
+        return "members = " + members;
     }
 }
