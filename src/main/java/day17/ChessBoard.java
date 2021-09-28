@@ -1,15 +1,15 @@
 package day17;
 
 public class ChessBoard {
-    private String[][] board;
-    public ChessBoard(String[][] board) {
+    private ChessPiese[][] board;
+    public ChessBoard(ChessPiese[][] board) {
         this.board = board;
     }
 
     public void print() {
         for(int i = 0; i < board.length; i++) {
             for(int j = 0; j < board.length; j++) {
-                System.out.print(board[i][j]);
+                System.out.print(board[i][j].getStrImage());
             }
             System.out.println("");
         }
